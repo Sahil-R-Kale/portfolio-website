@@ -3,7 +3,7 @@ import { AboutMap } from '@/components/AboutMap';
 import { achievements, education, experiences, skillGroups } from '@/content/about-data';
 
 function emphasize(text: string) {
-  return text.split(/(\d[\d+,.%]*(?:\s?(?:million|minutes|global regions|distributed servers|domains|students))?|ACL|NAACL|14 million transactions per month|AI agents|80\+ custom agentic AI workflows)/gi).map((part, index) => /^(\d|ACL$|NAACL$|AI agents$|80\+)/i.test(part) ? <strong key={index} className="font-bold text-ink">{part}</strong> : part);
+  return text.split(/(\d[\d+,.%]*(?:\s?(?:st|million|minutes|global regions|distributed servers|domains|students))?|ACL|NAACL|Click2Pay|AI agents|80\+ custom agentic AI workflows)/gi).map((part, index) => /^(\d|ACL$|NAACL$|Click2Pay$|AI agents$|1st$|80\+)/i.test(part) ? <strong key={index} className="font-bold text-ink">{part}</strong> : part);
 }
 
 const sectionTitle = (title: string) => <div className="mb-8"><h2 id={{ 'Professional experience': 'experience-title', 'Education & training': 'education-title', Skills: 'skills-title' }[title]} className="font-display text-4xl tracking-[-0.04em] text-ink sm:text-5xl">{title}</h2></div>;
