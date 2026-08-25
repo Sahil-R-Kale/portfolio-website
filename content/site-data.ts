@@ -27,6 +27,15 @@ export const siteData = {
   experience: [] satisfies ExperienceEntry[],
   publications: [
   {
+    title: 'ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models', authors: 'Sahil Kale, Ian Harris', month: 8,
+    venue: 'Submitted to NeurIPS E&D 2026, Sydney, Australia',
+    year: '2026',
+    url: 'https://arxiv.org/abs/2608.20338',
+    contributions: [
+      'Enables LLM unlearning to be explored and gauged at the level of concepts, instead of sparse facts, with evaluation being intent-sensitive to maximize contextual separation and promote safer behavior',
+    ],
+  },
+  {
     title: 'Local Information Access in Marathi: Evaluating LLM-Native Web Retrieval in a Low-Resource Environment', authors: 'Sahil Kale', month: 7,
     venue: 'ACM SIGIR Conference 2026, Melbourne, Australia',
     year: '2026',
@@ -130,16 +139,16 @@ export const siteData = {
     'Examines the internal web-search behavior of language models as part of their broader ability to recognize and address knowledge gaps.',
   ],
 },
-{
-  title: 'Assessing Population-level Accessibility to Medical College Hospitals in India: A Geospatial Modeling Study', authors: 'Harsh Thakkar, Chaitanya Reddy, Varun Raj Passi, Aamir Miyajiwala, Sahil Kale, Ankit Raj, Siddhesh Zadey', month: 12,
-  venue: 'medRxiv preprint',
-  year: '2024',
-  url: 'https://www.medrxiv.org/content/10.1101/2024.08.11.24311839v2',
-  contributions: [
-    'Proposes a geospatial modeling approach to assess population-level accessibility to MCHs across Indian states and rural vs. urban areas',
-    'Presents the density of MCHs, median travel times, and Access Population Coverage (APC) across 36 states and 735 districts, revealing significant disparities in access',
-  ],
-},
+// {
+//   title: 'Assessing Population-level Accessibility to Medical College Hospitals in India: A Geospatial Modeling Study', authors: 'Harsh Thakkar, Chaitanya Reddy, Varun Raj Passi, Aamir Miyajiwala, Sahil Kale, Ankit Raj, Siddhesh Zadey', month: 12,
+//   venue: 'medRxiv preprint',
+//   year: '2024',
+//   url: 'https://www.medrxiv.org/content/10.1101/2024.08.11.24311839v2',
+//   contributions: [
+//     'Proposes a geospatial modeling approach to assess population-level accessibility to MCHs across Indian states and rural vs. urban areas',
+//     'Presents the density of MCHs, median travel times, and Access Population Coverage (APC) across 36 states and 735 districts, revealing significant disparities in access',
+//   ],
+// },
   {
     title: 'TeXpert: A Multi-Level Benchmark for Evaluating LaTeX Code Generation by LLMs', authors: 'Sahil Kale, Vijaykant Nadadur', month: 6,
     venue: 'Scholarly Document Processing Workshop @ ACL 2025, Vienna, Austria',
@@ -193,7 +202,6 @@ export const siteData = {
   { year: 'Jun 2024', text: 'Joined Mastercard as a Software Engineer, working on large-scale distributed transaction and data systems.' },
   { year: 'Apr 2024', text: 'I graduated 1st among 8,200 B.E. Computer Engineering students across the University of Pune with a 9.78/10 grade.' },
   { year: 'Dec 2023', text: 'Our team won 1st place among 5,000+ entries at Smart India Hackathon 2023 for building a knowledge management system' },
-  { year: 'Aug 2022', text: 'I got a strong GRE score of 334/340.' },
   { year: 'Jun 2020', text: 'Started my bachelors in Computer Engineering at the Pune Institute of Computer Technology.' },
 ] satisfies HighlightEntry[]
 };
