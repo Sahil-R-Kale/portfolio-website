@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import { Nav } from '@/components/Nav';
 import { siteData } from '@/content/site-data';
+
+const title = 'Publications — Sahil Kale | LLM Self-Knowledge & Trustworthy AI Research';
+const description = 'Peer-reviewed publications by Sahil Kale on LLM self-knowledge, hallucination detection, and trustworthy AI, including work presented at NeurIPS, ACL, NAACL, SIGIR, and ICPRAM.';
+export const metadata: Metadata = { title, description, alternates: { canonical: 'https://sahil-kale.is-a.dev/publications' }, openGraph: { type: 'website', title, description, url: 'https://sahil-kale.is-a.dev/publications', images: [{ url: 'https://sahil-kale.is-a.dev/headshot.png' }] }, twitter: { card: 'summary_large_image', title, description, images: ['https://sahil-kale.is-a.dev/headshot.png'] } };
+const monthName = (month: number) => new Date(Date.UTC(2000, month - 1, 1)).toLocaleString('en-US', { month: 'long', timeZone: 'UTC' });
 
 const researchCategories = [
   {
@@ -46,7 +52,9 @@ const publicationId = (title: string) => `publication-${title.toLowerCase().repl
 export default function Publications() {
   const sortedPublications = [...siteData.publications].sort((a, b) => Number(b.year) - Number(a.year) || b.month - a.month);
   const years = Array.from(new Set(sortedPublications.map((publication) => publication.year))).sort((a, b) => Number(b) - Number(a));
+  const publicationJsonLd = sortedPublications.map((publication) => ({ '@context': 'https://schema.org', '@type': 'ScholarlyArticle', name: publication.title, headline: publication.title, author: publication.authors.split(', ').map((name) => ({ '@type': 'Person', name })), isPartOf: { '@type': 'CreativeWork', name: publication.venue }, datePublished: `${publication.year}-${String(publication.month).padStart(2, '0')}`, url: publication.url }));
   return <main className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(publicationJsonLd) }} />
     <Nav />
     <header className="pb-12 pt-14 sm:pt-20"><h1 className="mb-6 font-display text-5xl tracking-[-0.055em] text-ink sm:text-6xl">My Publications</h1><p className="text-base leading-8 text-ink/70">Here’s a list of my conference and journal publications, spanning my work on trustworthy AI, LLMs, NLP, and reliable machine learning systems.</p></header>
     <section aria-label="Research categories" className="mb-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -61,7 +69,7 @@ export default function Publications() {
         </div>
       </article>)}
     </section>
-    <div className="pb-20">{years.map((year) => <section key={year} className="border-t border-ink/10 py-9 first:border-t-0 first:pt-0" aria-labelledby={`publications-${year}`}><h2 id={`publications-${year}`} className="font-display text-3xl tracking-[-0.04em] text-sky">{year}</h2><div className="mt-5">{sortedPublications.filter((publication) => publication.year === year).map((publication) => <article key={publication.title} id={publicationId(publication.title)} className="grid gap-4 border-t border-ink/10 py-7 first:border-t-0 first:pt-0 sm:grid-cols-[minmax(0,1.5fr)_minmax(220px,0.5fr)] sm:gap-16"><div><h3 className="max-w-4xl font-display text-lg leading-tight tracking-[-0.02em] text-ink sm:text-xl">{publication.title}</h3><p className="mt-2 text-xs italic leading-5 text-ink/55">{publication.authors}</p><ul className="mt-3 space-y-2 text-sm leading-6 text-ink/70">{publication.contributions.map((contribution) => <li key={contribution} className="relative pl-4 before:absolute before:left-0 before:top-[0.7em] before:h-1 before:w-1 before:rounded-full before:bg-coral">{contribution}</li>)}</ul></div><div className="sm:pt-1"><p className="text-xs font-bold uppercase leading-5 tracking-[0.08em] text-sky">{publication.venue}</p><Link href={publication.url} target="_blank" rel="noreferrer" className="focus-ring mt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-coral transition-colors hover:text-ink">Read the paper <ArrowUpRight size={14} /></Link></div></article>)}</div></section>)}</div>
+    <div className="pb-20">{years.map((year) => <section key={year} className="border-t border-ink/10 py-9 first:border-t-0 first:pt-0" aria-labelledby={`publications-${year}`}><h2 id={`publications-${year}`} className="font-display text-3xl tracking-[-0.04em] text-sky">{year}</h2><div className="mt-5">{sortedPublications.filter((publication) => publication.year === year).map((publication) => <article key={publication.title} id={publicationId(publication.title)} className="grid gap-4 border-t border-ink/10 py-7 first:border-t-0 first:pt-0 sm:grid-cols-[minmax(0,1.5fr)_minmax(220px,0.5fr)] sm:gap-16"><div><h3 className="max-w-4xl font-display text-lg leading-tight tracking-[-0.02em] text-ink sm:text-xl">{publication.title}</h3><p className="mt-2 text-xs italic leading-5 text-ink/55">{publication.authors}</p><time className="sr-only" dateTime={`${publication.year}-${String(publication.month).padStart(2, '0')}`}>{monthName(publication.month)} {publication.year}</time><ul className="mt-3 space-y-2 text-sm leading-6 text-ink/70">{publication.contributions.map((contribution) => <li key={contribution} className="relative pl-4 before:absolute before:left-0 before:top-[0.7em] before:h-1 before:w-1 before:rounded-full before:bg-coral">{contribution}</li>)}</ul></div><div className="sm:pt-1"><p className="text-xs font-bold uppercase leading-5 tracking-[0.08em] text-sky">{publication.venue}</p><Link href={publication.url} target="_blank" rel="noreferrer" className="focus-ring mt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-coral transition-colors hover:text-ink">Read the paper <ArrowUpRight size={14} /></Link></div></article>)}</div></section>)}</div>
     <footer className="flex items-center justify-between border-t border-ink/10 py-7 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink/40"><span>{siteData.name}</span><span>ai engineer &amp; researcher</span></footer>
   </main>;
 }

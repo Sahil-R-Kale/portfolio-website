@@ -15,7 +15,7 @@ export type SkillGroup = { category: string; skills: string[] };
 export const achievements: MapAchievement[] = [
   { id: 'sih-2023', event: 'Smart India Hackathon 2023', city: 'Chandigarh', country: 'India', description: 'Achieved first place from 5,000+ entries for a government contact-center knowledge management tool.', latitude: 30.7333, longitude: 76.7794 },
   { id: 'icccee-2023', event: 'IEEE ICCCEE 2023', city: 'Pune', country: 'India', description: 'Proposed a quadtree system for fair, automatically demarcated constituency boundaries.', latitude: 18.5204, longitude: 73.8567 },
-  { id: 'fao-2024', event: 'FAO-CAAS Agriculture Hackathon 2024', city: 'Sanya', country: 'China', description: 'Awarded second place for a quniue voice-driven AI system connecting farmer opinions to policymakers.', latitude: 18.2431, longitude:  104.505 },
+  { id: 'fao-2024', event: 'FAO-CAAS Agriculture Hackathon 2024', city: 'Sanya', country: 'China', description: 'Awarded second place for a unique voice-driven AI system connecting farmer opinions to policymakers.', latitude: 18.2431, longitude:  104.505 },
   { id: 'pre-acl-2025', event: 'Pre-ACL Workshop 2025', city: 'Copenhagen', country: 'Denmark', description: 'Presented research on memorized solutions and model self-knowledge about reasoning ability.', latitude: 55.6761, longitude: 12.5683 },
   { id: 'naacl-2025', event: 'NAACL Conference 2025', city: 'Albuquerque', country: 'USA', description: 'Shared a methodology for studying LLM self-knowledge and capability awareness.', latitude: 35.0844, longitude: -101.6504 },
   { id: 'acl-2025', event: 'ACL Conference 2025', city: 'Vienna', country: 'Austria', description: 'Proposed TeXpert, a benchmark for natural-language prompts that generate scientific LaTeX.', latitude: 48.2082, longitude: 16.3738 },
@@ -29,7 +29,7 @@ export const achievements: MapAchievement[] = [
   { id: 'icra-2026', event: 'ICRA Conference 2026', city: 'Vienna', country: 'Austria', description: 'Presented industry work from KnowledgeVerse AI for academic discussion.', latitude: 48.2082, longitude: 16.3738 },
   { id: 'sigir-2026', event: 'SIGIR Conference 2026', city: 'Melbourne', country: 'Australia', description: 'Presented research benchmarking LLM information integration from web sources in low-resource environments.', latitude: -37.8136, longitude: 144.9631 },
   { id: 'eccv-2026', event: 'ECCV Conference 2026', city: 'Malmo', country: 'Sweden', description: 'Spoke about a novel concept-level LLM unlearning benchmarking targeting the removal of harmful intents and preserving overlapping benign capabilities.', latitude: 55.6059, longitude: 13.0007 },
-  { id: 'princeton-2026', event: 'ICWSM Global Initiative 2026', city: 'Princeton', country: 'USA', description: 'Collabroation with Prof. Manoel Ribeiro at Princeton University on analysing moderation patterns and failures on Moltbook', latitude: 40.3582, longitude: -74.6667 },
+  { id: 'princeton-2026', event: 'ICWSM Global Initiative 2026', city: 'Princeton', country: 'USA', description: 'Collaboration with Prof. Manoel Ribeiro at Princeton University on analysing moderation patterns and failures on Moltbook', latitude: 40.3582, longitude: -74.6667 },
   { id: 'ucla-2026', event: 'MS in CS at UCLA', city: 'Los Angeles', country: 'USA', description: 'Pursuing an MS degree at UCLA in computer science with a focus on safe and trustworthy AI', latitude: 34.0522, longitude: -115.2437 }
 ];
 

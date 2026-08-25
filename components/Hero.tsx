@@ -21,7 +21,7 @@ export function Hero() {
     </div>
     <motion.div variants={enter} className="relative order-1 mx-auto w-full max-w-[240px] lg:order-2 lg:justify-self-end">
       <div className="relative aspect-square overflow-hidden rounded-full border-2 border-coral bg-mist p-1 shadow-[0_15px_40px_rgba(23,36,58,0.1)]">
-        <div className="relative h-full w-full overflow-hidden rounded-full"><Image src="/headshot.png" alt={`${siteData.name} sahil_image`} fill priority sizes="(max-width: 1024px) 210px, 240px" className="object-cover" /></div>
+        <div className="relative h-full w-full overflow-hidden rounded-full"><Image src="/headshot.png" alt="Portrait of Sahil Kale" fill priority sizes="(max-width: 1024px) 210px, 240px" className="object-cover" /></div>
       </div>
       {/* <p className="mt-4 text-center text-[10px] font-semibold uppercase tracking-[0.18em] text-ink/45">Research · Language · Uncertainty</p> */}
     </motion.div>

@@ -33,7 +33,7 @@ export function AboutMap({ achievements }: { achievements: MapAchievement[] }) {
   const seen = new Map<string, number>();
   return <>
   <div ref={mapRef} className="relative mt-8 aspect-[1.8/1] w-full overflow-visible rounded-[2rem] border border-ink/10 bg-white/35 p-2 shadow-[0_18px_50px_rgba(23,36,58,0.06)] sm:p-4">
-    <img src="/about-world-map.svg" alt="" aria-hidden="true" className="absolute inset-2 h-[calc(100%-1rem)] w-[calc(100%-1rem)] object-contain opacity-25 sm:inset-4 sm:h-[calc(100%-2rem)] sm:w-[calc(100%-2rem)]" />
+    <img src="/about-world-map.svg" alt="Map showing Sahil Kale's research presentations and achievements across countries including the United States, Australia, Austria, Germany, Spain, Italy, France, Switzerland, Portugal, Denmark, China, India, and Sweden." className="absolute inset-2 h-[calc(100%-1rem)] w-[calc(100%-1rem)] object-contain opacity-25 sm:inset-4 sm:h-[calc(100%-2rem)] sm:w-[calc(100%-2rem)]" />
     <div className="absolute left-6 top-5 z-20 sm:left-8 sm:top-7">
       <p className="text-[10px] font-bold tracking-[0.1em] text-coral sm:text-sm sm:tracking-[0.12em]">A MAP OF ACHIEVEMENTS</p>
       <p className="mt-1 hidden text-xs font-semibold uppercase tracking-[0.1em] text-ink/45 sm:block">Hover pins for details</p>

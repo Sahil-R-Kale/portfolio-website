@@ -1,8 +1,6 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-  if (!siteUrl) return [];
-  const baseUrl = siteUrl.replace(/\/$/, '');
-  return [{ url: baseUrl }, { url: `${baseUrl}/about` }, { url: `${baseUrl}/publications` }];
+  const baseUrl = 'https://sahil-kale.is-a.dev';
+  return [{ url: `${baseUrl}/` }, { url: `${baseUrl}/about` }, { url: `${baseUrl}/publications` }, { url: `${baseUrl}/cv.pdf` }];
 }

@@ -1,6 +1,11 @@
+import type { Metadata } from 'next';
 import { Nav } from '@/components/Nav';
 import { AboutMap } from '@/components/AboutMap';
 import { achievements, education, experiences, skillGroups } from '@/content/about-data';
+
+const title = 'About — Sahil Kale | Research Journey & Experience';
+const description = "Sahil Kale's research journey across trustworthy AI and NLP — professional experience at Mastercard and KnowledgeVerse AI, education at UCLA, and a map of international research milestones.";
+export const metadata: Metadata = { title, description, alternates: { canonical: 'https://sahil-kale.is-a.dev/about' }, openGraph: { type: 'website', title, description, url: 'https://sahil-kale.is-a.dev/about', images: [{ url: 'https://sahil-kale.is-a.dev/headshot.png' }] }, twitter: { card: 'summary_large_image', title, description, images: ['https://sahil-kale.is-a.dev/headshot.png'] } };
 
 function emphasize(text: string) {
   return text.split(/(\d[\d+,.%]*(?:\s?(?:st|million|minutes|global regions|distributed servers|domains|students))?|ACL|NAACL|Click2Pay|AI agents|80\+ custom agentic AI workflows)/gi).map((part, index) => /^(\d|ACL$|NAACL$|Click2Pay$|AI agents$|1st$|80\+)/i.test(part) ? <strong key={index} className="font-bold text-ink">{part}</strong> : part);
