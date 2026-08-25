@@ -7,7 +7,7 @@ const siteUrl = new URL('https://sahil-kale.is-a.dev');
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
-  verification: { google: 'google9a9d3d4516e5fd27.html' },
+  verification: { google: 'u2_0X9eHgUP3RI4Rsbii4inyaGE1ZmIcsHnB8Qeq-Pw' },
 };
 
 const personJsonLd = {
