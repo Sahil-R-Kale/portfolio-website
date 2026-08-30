@@ -7,6 +7,8 @@ const siteUrl = new URL('https://sahil-kale.is-a.dev');
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
+  title: 'Sahil Kale | AI & NLP Researcher — Trustworthy, Reliable AI',
+  description: 'Sahil Kale is an AI/NLP researcher at UCLA working on LLM self-knowledge, hallucination detection, and calibration under uncertainty. Published at NeurIPS, ACL, NAACL, and SIGIR.',
   verification: { google: 'u2_0X9eHgUP3RI4Rsbii4inyaGE1ZmIcsHnB8Qeq-Pw' },
 };
 
