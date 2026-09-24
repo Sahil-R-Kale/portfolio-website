@@ -28,7 +28,7 @@ export const siteData = {
   publications: [
   {
     title: 'ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models', authors: 'Sahil Kale, Ian Harris', month: 8,
-    venue: 'Submitted to NeurIPS E&D 2026, Sydney, Australia',
+    venue: 'Submitted to NAACL 2027, San Francisco, USA',
     year: '2026',
     url: 'https://arxiv.org/abs/2608.20338',
     contributions: [
@@ -82,7 +82,7 @@ export const siteData = {
   },
   {
     title: 'Line of Duty: Evaluating LLM Self-Knowledge via Consistency in Feasibility Boundaries', authors: 'Sahil Kale, Vijaykant Nadadur', month: 4,
-    venue: 'TrustAI Workshop @NAACL 2025, Albuquerque, USA',
+    venue: 'TrustNLP Workshop @NAACL 2025, Albuquerque, USA',
     year: '2025',
     url: 'https://aclanthology.org/2025.trustnlp-main.10/',
     contributions: [
@@ -196,7 +196,7 @@ export const siteData = {
   { year: 'Aug 2025', text: 'Our paper introducing TeXpert, a benchmark for evaluating LLM-generated LaTeX was presented at ACL 2025 in Vienna' },
   { year: 'Jul 2025', text: 'My abstract on LLM self-awareness won me a merit support award at the Pre-ACL workshop in Copenhagen.' },
   { year: 'Jul 2025', text: 'Attended the Lisbon Machine Learning Summer School with a $1,500 Google scholarship' },
-  { year: 'Apr 2025', text: 'I presented research analysing consistency in LLM self-knowledge at the TrustAI workshop at NAACL 2025 in Albuquerque' },
+  { year: 'Apr 2025', text: 'I presented research analysing consistency in LLM self-knowledge at the TrustNLP workshop at NAACL 2025 in Albuquerque' },
   { year: 'Dec 2024', text: 'Our project, Avani, achieved second place in the "Pattern" track at the FAO China Youth Hackathon on Urban Agriculture' },
   { year: 'Jun 2024', text: 'Started working with KnowledgeVerse AI as an AI Research Consultant, leading research on trustworthy and explainable LLM systems.' },
   { year: 'Jun 2024', text: 'Joined Mastercard as a Software Engineer, working on large-scale distributed transaction and data systems.' },
