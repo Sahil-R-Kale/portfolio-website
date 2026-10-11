@@ -16,7 +16,6 @@ const researchCategories = [
       { match: 'KnowRL:', keyword: 'KnowRL' },
       { match: 'Mirage of Mastery:', keyword: 'Memorization' },
       { match: 'Line of Duty:', keyword: 'Line of Duty' },
-      { match: 'Future Confidence Distillation', keyword: 'Future Confidence' },
     ],
   },
   {

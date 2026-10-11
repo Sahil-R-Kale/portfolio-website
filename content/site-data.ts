@@ -16,7 +16,7 @@ export const siteData = {
   // The short line immediately below your name; keep this concise and memorable.
   tagline: 'Building Trustworthy and Reliable AI',
   // The main professional description on the homepage. Use 2–3 sentences.
-  bio: 'Hi! I am Sahil, an AI researcher and engineer working on trustworthy and reliable language models, with research spanning LLM self-knowledge, hallucination detection, uncertainty calibration, and AI-powered information retrieval. My work has been published at venues including NeurIPS, ACL, NAACL, and SIGIR, and I am currently pursuing an M.S. in Computer Science at UCLA following research and engineering roles at Mastercard and KnowledgeVerse AI. My main goal is to build AI systems that are powerful yet also trustworthy enough to actually help humans towards a more equitable future.\n\nI’m open to research collaborations and exploring AI research & engineering roles for 2027. Please feel free to reach out via email to connect!',
+  bio: 'Hi! I am Sahil, an AI researcher and engineer working on trustworthy and reliable language models, with research spanning LLM self-knowledge, hallucination detection, uncertainty calibration, and AI-powered information retrieval. My work has been published at venues including IASEAI, SIGIR, and ACL/NAACL workshops, and I am currently pursuing an M.S. in Computer Science at UCLA following research and engineering roles at Mastercard and KnowledgeVerse AI. My main goal is to build AI systems that are powerful yet also trustworthy enough to actually help humans towards a more equitable future.\n\nI’m open to research collaborations and exploring AI research & engineering roles for 2027. Please feel free to reach out via email to connect!',
   // These links power the icon row. Change only href/hint when your contact details change.
   contactLinks: [
     { label: 'Email', href: 'mailto:sahilrkale05@gmail.com', kind: 'email', hint: 'sahilrkale05@gmail.com' },
@@ -46,7 +46,7 @@ export const siteData = {
   },
   {
     title: 'KnowRL: Teaching Language Models to Know What They Know', authors: 'Sahil Kale, Devendra Singh Dhami', month: 5,
-    venue: 'Submitted to NeurIPS 2026, Sydney, Australia',
+    venue: 'arxiv Preprint',
     year: '2026',
     url: 'https://arxiv.org/abs/2510.11407',
     contributions: [
@@ -90,16 +90,6 @@ export const siteData = {
       'Found that even frontier models such as GPT-4o and Mistral Large are uncertain about their capabilities more than 80% of the time.',
     ],
   },
-  {
-    title: 'Future Confidence Distillation in Large Language Models', authors: 'Sahil Kale', month: 7,
-  venue: 'Submitted to AAAI 2027, Montreal, Canada',
-  year: '2026',
-  url: 'https://arxiv.org/abs/2607.07626',
-  contributions: [
-    'Investigates how language models can improve their confidence estimation by distilling information about future states post answer generation.',
-    'Shows how distilled predictors recover calibration improvement achieved by post-solution confidence, remain highly sample efficient, and transfer across domains'
-  ],
-},
 {
   title: 'Designing Policy with Last-Mile Stakeholders: Connecting Ground-Level Farmer Insights to Indian Agrarian Policymakers with NLP', authors: 'Kasturi Pathak, Sahil Kale', month: 6,
   venue: 'ACM DIS Conference 2026, Singapore',
@@ -131,7 +121,7 @@ export const siteData = {
 },
 {
   title: 'Look It Up: Analysing Internal Web Search Capabilities of Modern LLMs', authors: 'Sahil Kale', month: 12,
-  venue: 'arXiv preprint',
+  venue: 'Submitted to ECIR 2027, Southampton, UK',
   year: '2025',
   url: 'https://arxiv.org/abs/2511.18931',
   contributions: [
@@ -178,12 +168,12 @@ export const siteData = {
     ],
   },
 ] satisfies PublicationEntry[],
-  // Add honors or distinctions here; ready for a future About or CV page.
   awards: [] satisfies AwardEntry[],
   highlights: [
+  { year: 'Oct 2026', text: 'I was invited to present my work at the WiNLP workshop at EMNLP 2026 in Budapest, Hungary.' },
   { year: 'Sep 2026', text: 'Excited to start my M.S. in Computer Science at UCLA, focusing on NLP and safe AI.' },
-  { year: 'Sep 2026', text: 'I was invited to present at the U&ME LLM Unlearning workshop at ECCV 2026 in Malmo, Sweden with a full grant.' },
-  { year: 'Jul 2026', text: 'I presented as one of only 1% of Indian authors at SIGIR 2026 in Melbourne supported by a full scholarship about low resource LLM-native web retrieval' },
+  { year: 'Sep 2026', text: 'Demonstrated my work at the U&ME LLM Unlearning workshop at ECCV 2026 in Malmo, Sweden with a full grant.' },
+  { year: 'Jul 2026', text: 'I presented as one of only ~1% of Indian authors at SIGIR 2026 in Melbourne supported by a full scholarship about low resource LLM-native web retrieval' },
   { year: 'Jun 2026', text: 'My pitch as a start-up representative won an $800 award for KnowledgeVerse AI at ICRA 2026 in Vienna, Austria' },
   { year: 'Jun 2026', text: 'My co-author, Kasturi presented our work on AI-backed techniques to connect farmers with policymakers at ACM DIS 2026 in Singapore.'},
   { year: 'May 2026', text: 'Presented research at ACM WebSci 2026 in Braunschweig, Germany on LLM web search capabilities with an ACM grant.' },
