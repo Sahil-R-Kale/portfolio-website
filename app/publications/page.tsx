@@ -5,7 +5,7 @@ import { Nav } from '@/components/Nav';
 import { siteData } from '@/content/site-data';
 
 const title = 'Publications — Sahil Kale | LLM Self-Knowledge & Trustworthy AI Research';
-const description = 'Peer-reviewed publications by Sahil Kale on LLM self-knowledge, hallucination detection, and trustworthy AI, including work presented at NeurIPS, ACL, NAACL, SIGIR, and ICPRAM.';
+const description = 'Peer-reviewed publications by Sahil Kale on LLM self-knowledge, hallucination detection, and trustworthy AI, including work presented at IASEAI, SIGIR, and ICPRAM.';
 export const metadata: Metadata = { title, description, alternates: { canonical: 'https://sahil-kale.is-a.dev/publications' }, openGraph: { type: 'website', title, description, url: 'https://sahil-kale.is-a.dev/publications', images: [{ url: 'https://sahil-kale.is-a.dev/headshot.png' }] }, twitter: { card: 'summary_large_image', title, description, images: ['https://sahil-kale.is-a.dev/headshot.png'] } };
 const monthName = (month: number) => new Date(Date.UTC(2000, month - 1, 1)).toLocaleString('en-US', { month: 'long', timeZone: 'UTC' });
 
