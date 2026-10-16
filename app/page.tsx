@@ -5,7 +5,7 @@ import { Highlights } from '@/components/Highlights';
 import { siteData } from '@/content/site-data';
 
 const title = 'Sahil Kale | AI & NLP Researcher — Trustworthy, Reliable AI';
-const description = 'Sahil Kale is an AI/NLP researcher at UCLA working on LLM self-knowledge, hallucination detection, and calibration under uncertainty. Published at NeurIPS, ACL, NAACL, and SIGIR.';
+const description = 'Sahil Kale is an AI/NLP researcher at UCLA working on LLM self-knowledge, hallucination detection, and calibration under uncertainty. Published at IASEAI, SIGIR, and ACL/NAACL workshops';
 export const metadata: Metadata = { title, description, alternates: { canonical: 'https://sahil-kale.is-a.dev/' }, openGraph: { type: 'website', title, description, url: 'https://sahil-kale.is-a.dev/', images: [{ url: 'https://sahil-kale.is-a.dev/headshot.png' }] }, twitter: { card: 'summary_large_image', title, description, images: ['https://sahil-kale.is-a.dev/headshot.png'] } };
 
 export default function Home() {
