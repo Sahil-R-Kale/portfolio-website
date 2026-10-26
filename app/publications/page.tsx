@@ -13,6 +13,7 @@ const researchCategories = [
   {
     title: 'LLM Self-Knowledge',
     papers: [
+      { match: 'Beyond Calibration:', keyword: 'Temporal Confidence' },
       { match: 'KnowRL:', keyword: 'KnowRL' },
       { match: 'Mirage of Mastery:', keyword: 'Memorization' },
       { match: 'Line of Duty:', keyword: 'Line of Duty' },

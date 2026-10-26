@@ -27,6 +27,16 @@ export const siteData = {
   experience: [] satisfies ExperienceEntry[],
   publications: [
   {
+    title: 'Beyond Calibration: Temporal LLM Confidence Assessment Across Languages and Local Settings', authors: 'Sahil Kale', month: 10,
+    venue: 'WiNLP Workshop @ EMNLP 2026, Budapest, Hungary',
+    year: '2026',
+    url: 'https://aclanthology.org/2026.winlp-main.2/',
+    contributions: [
+      'Distinguishes pre-solve Feeling-of-Knowing and post-solve Judgement-of-Learning confidence signals in large language models.',
+      'Shows that post-solve confidence is generally better calibrated, while confidence reliability degrades for genuinely local Marathi knowledge and hallucinated responses remain highly confident.',
+    ],
+  },
+  {
     title: 'ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models', authors: 'Sahil Kale, Ian Harris', month: 8,
     venue: 'Submitted to NAACL 2027, San Francisco, USA',
     year: '2026',
