@@ -180,7 +180,8 @@ export const siteData = {
 ] satisfies PublicationEntry[],
   awards: [] satisfies AwardEntry[],
   highlights: [
-  { year: 'Oct 2026', text: 'I was invited to present my work at the WiNLP workshop at EMNLP 2026 in Budapest, Hungary.' },
+  { year: 'Nov 2026', text: 'Invited to the IEEE FMLDS 2026 conference in Kobe, Japan to present research and receive the travel award for outstanding research contributions.' },
+  { year: 'Oct 2026', text: 'I presented my temporal self-calibration research at the WiNLP workshop at EMNLP 2026 in Budapest, Hungary.' },
   { year: 'Sep 2026', text: 'Excited to start my M.S. in Computer Science at UCLA, focusing on NLP and safe AI.' },
   { year: 'Sep 2026', text: 'Demonstrated my work at the U&ME LLM Unlearning workshop at ECCV 2026 in Malmo, Sweden with a full grant.' },
   { year: 'Jul 2026', text: 'I presented as one of only ~1% of Indian authors at SIGIR 2026 in Melbourne supported by a full scholarship about low resource LLM-native web retrieval' },
